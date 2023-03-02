@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Login {
 
+	//exemplu pt git
 	public void verificaLogin() {
 		
 		//ne ajuta sa citim de la tastatura

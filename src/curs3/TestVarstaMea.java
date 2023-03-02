@@ -6,7 +6,7 @@ public class TestVarstaMea {
 
 
 		VarstaMea obj = new VarstaMea();
-		obj.verificaVarstaMea(66);
+		obj.verificaVarstaMea(65);
 
 	}
 
