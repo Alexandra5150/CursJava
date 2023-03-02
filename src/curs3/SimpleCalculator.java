@@ -63,8 +63,7 @@ public class SimpleCalculator {
 		}else {
 			System.out.println("Wrong operation!");
 		}
-		
-		
+				
 	}
 	
 	
