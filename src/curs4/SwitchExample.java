@@ -48,7 +48,7 @@ public class SwitchExample {
 			printResult();
 			break;			
 		default:
-			System.out.println("Wrnf operation!");
+			System.out.println("Wrong operation!");
 		}
 		
 	}
