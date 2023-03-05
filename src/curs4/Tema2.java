@@ -18,17 +18,19 @@ public class Tema2 {
 
 		Scanner scan = new Scanner(System.in);
 		
+	
+		int number;
+		int result;
+		char operation = '*';
+		
+		
+		System.out.println("Please enter a number:");
+		number = scan.nextInt();
 		
 		for (int i=1; i<=10; i++) {
 			
 			
-			int number;
-			int result;
-			char operation = '*';
-			
-			
-			System.out.println("Please enter a number:");
-			number = scan.nextInt();
+
 			
 			result = number * i;
 			

@@ -19,44 +19,47 @@ public class Tema1 {
 
 		Scanner scan = new Scanner (System.in);
 		
-		int num1, num2, num3, num4, num5, num6, num7, num8, num9, num10;
-		int result;
+//		int num1, num2, num3, num4, num5, num6, num7, num8, num9, num10;
+//		int result;
+//
+//		
+//		System.out.println("Please enter number 1:");
+//		num1 = scan.nextInt();
+//		System.out.println("Please enter number 2:");
+//		num2 = scan.nextInt();
+//		System.out.println("Please enter number 3:");
+//		num3 = scan.nextInt();
+//		System.out.println("Please enter number 4:");
+//		num4 = scan.nextInt();
+//		System.out.println("Please enter number 5:");
+//		num5 = scan.nextInt();
+//		System.out.println("Please enter number 6:");
+//		num6 = scan.nextInt();
+//		System.out.println("Please enter number 7:");
+//		num7 = scan.nextInt();
+//		System.out.println("Please enter number 8:");
+//		num8 = scan.nextInt();
+//		System.out.println("Please enter number 9:");
+//		num9 = scan.nextInt();
+//		System.out.println("Please enter number 10:");
+//		num10 = scan.nextInt();
+//		
+//		result = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
+//
+//		System.out.println("The sum of the numbers is: " + result);
+		
+		int result = 0;
+		int currentNumber = 0;
 
+		for (int i=0; i<10; i++) {
+		  
+			System.out.println("Please enter number " + (i+1));
+			currentNumber = scan.nextInt();
+			result =result + currentNumber;
+		}
+		 
+			System.out.println("The sum of the numbers is: " + result);
 		
-		System.out.println("Please enter number 1:");
-		num1 = scan.nextInt();
-		System.out.println("Please enter number 2:");
-		num2 = scan.nextInt();
-		System.out.println("Please enter number 3:");
-		num3 = scan.nextInt();
-		System.out.println("Please enter number 4:");
-		num4 = scan.nextInt();
-		System.out.println("Please enter number 5:");
-		num5 = scan.nextInt();
-		System.out.println("Please enter number 6:");
-		num6 = scan.nextInt();
-		System.out.println("Please enter number 7:");
-		num7 = scan.nextInt();
-		System.out.println("Please enter number 8:");
-		num8 = scan.nextInt();
-		System.out.println("Please enter number 9:");
-		num9 = scan.nextInt();
-		System.out.println("Please enter number 10:");
-		num10 = scan.nextInt();
-		
-		result = num1 + num2 + num3 + num4 + num5 + num6 + num7 + num8 + num9 + num10;
-
-		System.out.println("The sum of the numbers is: " + result);
-		
-		
-		
-		/*for (int i=0; i<=10; i++) {
-		 * 
-		 * 
-		 * 
-			System.out.println("The sum of the numbers is: " + i);
-		}*/
-
 		
 		
 	}
