@@ -18,7 +18,6 @@ public class Tema2 {
 
 		Scanner scan = new Scanner(System.in);
 		
-	
 		int number;
 		int result;
 		char operation = '*';
@@ -29,14 +28,9 @@ public class Tema2 {
 		
 		for (int i=1; i<=10; i++) {
 			
-			
-
-			
 			result = number * i;
-			
-			
-			System.out.println(number + " " + operation + " " + i + " = " + result);
-			
+					
+			System.out.println(number + " " + operation + " " + i + " = " + result);		
 			
 		}
 		
