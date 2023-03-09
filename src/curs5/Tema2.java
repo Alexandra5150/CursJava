@@ -9,14 +9,15 @@ public class Tema2 {
 
 	public static void main(String[] args) {
 
-		//rezolvareCuFor();
-		rezolvareCuWhile();
+		rezolvareCuFor();
+		//rezolvareCuWhile();
 
 	}
 
 	public static void rezolvareCuFor() {
 		
-		String text = "Eu invat Java";
+		String text = "Eu invat Java".toLowerCase();
+		//text = text.toLowerCase();
 
 		int numarVocale = 0;
 		
@@ -37,7 +38,7 @@ public class Tema2 {
 	
 	public static void rezolvareCuWhile() {		
 		
-		String text = "Eu invat Java";
+		String text = "Eu invat Java".toLowerCase();
 
 		int numarVocale = 0;
 		
