@@ -20,9 +20,14 @@ public class Exercitiu5 {
 		int punctaj;
 		punctaj = scan.nextInt();
 		
-		String result = (punctaj>=90) ? "Ai primit : FoarteBine" : (punctaj>=80) ? "Ai primit : Bine" : "Ai primit : Suficient";
-		System.out.println(result);
 
+
+        String result = punctaj >=90 ? "FB" : punctaj >= 80 ? "B" :"S";
+
+        String greeting = (result.equals("FB"))? "Ai primit : FoarteBine" :(result.equals("B"))?"Ai primit : Bine":"Ai primit : Suficient";
+
+        System.out.println(greeting); 
+		
 	}
 
 }
