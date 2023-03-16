@@ -8,7 +8,6 @@ public class InsufficientFundsException extends Exception {
 	
 	public InsufficientFundsException (String mesaj) {
 		super(mesaj);
-		mesaj = "Insuficient funds for transaction";
 	}
 	
 }

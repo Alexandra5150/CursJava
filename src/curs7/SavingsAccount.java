@@ -2,17 +2,18 @@ package curs7;
 
 public class SavingsAccount extends Account {
 
-public SavingsAccount(int accountNumber, double balance, String accountOwner) {
-		super(accountNumber, balance, accountOwner);
-		
-	}
-
 //	Clasa SavingsAccount care mosteneste Account
 //	Seteaza in constructor accountOwner, balance si accountNumber
 //	Suprascrie metoda withdraw unde implementeaza:
 //	- daca suma ce urmeaza a fi retrasa este mai mare decat balanta curenta,
 //	arunca InsuficientFundsException
 //	- altfel scade suma ce urmeaza a fi retrasa din balanta
+	
+	
+public SavingsAccount(int accountNumber, double balance, Customer accountOwner) {
+		super(accountNumber, balance, accountOwner);
+		
+	}
 	
 	
 	@Override

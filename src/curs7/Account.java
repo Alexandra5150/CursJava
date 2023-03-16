@@ -10,13 +10,15 @@ public class Account {
 //		O metoda withdraw care primeste ca argument suma ce trebuie retrasa si arunca exceptia InsufficientFundsException
 	
 	
-	public Account(int accountNumber, double balance, String accountOwner) {
-		
+	public Account(int accountNumber, double balance, Customer accountOwner) {
+		this.accountNumber = accountNumber;
+		this.balance = balance;
+		this.accountOwner = accountOwner;
 	}
 	
 	private int accountNumber;
 	public double balance;
-	public String accountOwner;
+	public Customer accountOwner;
 	
 	
 	public void withdraw(int suma) throws InsufficientFundsException {

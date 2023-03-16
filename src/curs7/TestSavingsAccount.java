@@ -13,19 +13,23 @@ public class TestSavingsAccount {
 //		Intreba userul ” Please enter the amount to withdraw”
 		
 		Customer customer = new Customer("Ion", "Bucuresti", "email");
-		Account account = new Account (123456, 15000, "Ion");
-		SavingsAccount savingsAccount = new SavingsAccount(123456, 15000, "Ion");
+
+		SavingsAccount savingsAccount = new SavingsAccount(123456, 15000, customer);
 		
+		String name = savingsAccount.accountOwner.getName();
 		
-		System.out.println("Hi " + customer);
+		System.out.println("Hi " + name);
 		System.out.println("Please enter the amount to withdraw:");
 		
 		Scanner scan = new Scanner (System.in);
 		int suma = scan.nextInt();
 		
-	
+		try {
 		savingsAccount.withdraw(suma);
 		
+		} catch (InsufficientFundsException exceptie) {
+			System.out.println(exceptie.getMessage());
+		}
 		
 
 	}
