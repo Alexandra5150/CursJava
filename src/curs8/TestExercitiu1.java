@@ -15,10 +15,11 @@ public class TestExercitiu1 {
 
 			Exercitiu1 propFile2 = new Exercitiu1();
 			//propFile2.writePropertiesFile();
-			propFile2.readPropertiesFile("morcov");
+			//propFile2.readPropertiesFile("morcov");
 			
 			
-			if (legume.keySet().contains(leguma)) {
+			
+			if (propFile2.keySet().contains(leguma)) {
 				
 				String x = propFile2.readPropertiesFile(leguma);
 				System.out.println("Leguma aleasa de tine are " + x + " calorii");

@@ -32,23 +32,29 @@ public class Exercitiu2 {
 		System.out.println("Ce nota ai luat?");
 		int nota = scan.nextInt();
 		
-		if(catalog.keySet().equals(nume) && catalog.values() <= nota) {
-		
-			System.out.println("Nu ai nevoie de alta nota");
-		
-		} else if (catalog.keySet().equals(nume) && catalog.values() > nota) {
+		if(catalog.keySet().contains(nume)) {
 			
-			catalog.put(nume, nota);
-			System.out.println("Am facut update catalogului cu noua nota");
+			if(catalog.get(nume) != null && catalog.get(nume) >= nota) {
 		
+				System.out.println("Nu ai nevoie de alta nota");
+		
+			} else if (catalog.get(nume) != null && catalog.get(nume) <= nota) {
+			
+				catalog.put(nume, nota);
+				System.out.println("Am facut update catalogului cu noua nota");		
+			} 
+			
 		} else {
-		
+			
 			catalog.put(nume, nota);
 			System.out.println("Nu aveai nota, ti-am trecut acum!");
 		}
 		
-		System.out.println(catalog);
 
+		System.out.println("Catalogul este: " + catalog);
+		
 	}
+		
 
+		
 }

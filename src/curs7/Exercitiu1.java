@@ -31,7 +31,7 @@ public class Exercitiu1 {
             System.out.println("Numarul introdus este invalid.");
         }
 		
-		} while (numar > 12); 
+		} while (numar <= 0 || numar > 12); 
 	}
 
 }
