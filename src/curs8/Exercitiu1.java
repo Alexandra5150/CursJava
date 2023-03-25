@@ -40,7 +40,7 @@ public class Exercitiu1 {
 	}
 	
 	
-	public void readPropertiesFile(String key) throws IOException {
+	public String readPropertiesFile(String key) throws IOException {
 		
 		try {
 			InputStream inputStream2 = new FileInputStream("legume.properties");
@@ -53,6 +53,7 @@ public class Exercitiu1 {
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
+		return key;
 		
 	}
 	

@@ -34,11 +34,11 @@ public class Exercitiu2 {
 		
 		if(catalog.keySet().contains(nume)) {
 			
-			if(catalog.get(nume) != null && catalog.get(nume) >= nota) {
+			if(catalog.get(nume) >= nota) {
 		
 				System.out.println("Nu ai nevoie de alta nota");
 		
-			} else if (catalog.get(nume) != null && catalog.get(nume) <= nota) {
+			} else if (catalog.get(nume) <= nota) {
 			
 				catalog.put(nume, nota);
 				System.out.println("Am facut update catalogului cu noua nota");		
