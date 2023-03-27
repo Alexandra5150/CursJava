@@ -48,12 +48,12 @@ public class Exercitiu1 {
 			Properties file2 = new Properties();
 			file2.load(inputStream2);
 			
-			System.out.println(file2.getProperty(key));
+			return file2.getProperty(key);
 			
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		}
-		return key;
+		return null;
 		
 	}
 	
